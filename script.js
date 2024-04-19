@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             try {
                 fetch(SERVER_URL+'/geturl/', {
-                            mode: 'no-cors',
+                            mode: 'cors',
                             method: 'GET',
                             headers: {
                                 'Content-Type': 'application/json'
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 
                                     try {
                                         const response = fetch(SERVER_URL+'/api/save-image/', {
-                                            mode: 'no-cors',
+                                            mode: 'cors',
                                             method: 'POST',
                                             headers: {
                                                 'Content-Type': 'application/json'
